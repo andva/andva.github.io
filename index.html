@@ -64,33 +64,33 @@
 		<div class="school_border"></div>
 		<header><h3>Imperfect shadow mapping</h3></header>
 		<div class="media">
-			<a class="fancyboxg5" href="media/figures/bunny_ssao.png" title="GPU Based Ray caster written in GLSL.">
-				<img src="media/figures/labs.jpg"/>
-			</a>
-			<div class="hidden">
-				<a class="fancyboxg5" href="media/figures/bunny_ssao.png" title="Original mesh, containing 5804 triangles."></a>
-			</div>
-			
+			<a class="fancyboxg5" href="media/figures/bunny_ssao.png" title="Imperfect shadow mapping results.">
+				<img src="media/figures/bunny_ssao.png"/>
+			</a>			
+		</div>
+		<div class="hidden">
+				
 		</div>
 		<div class="description">
 			<p>
 				The project implemented a report describing a technique for simulating low frequency soft shadows in a scene by using shadow maps and a point representation of the scene.
 				The implementation was based on the paper <a href="http://resources.mpi-inf.mpg.de/ImperfectShadowMaps/ISM.pdf" title="Imperfect Shadow Mapping"> by Ritschel et. al.
 				This allowed for increasing the light source count in the scene and make the lightning converge towards a real representation of area lights while still running in real time.
-				To add more high frequency shadows we used a screen space ambient occlusion algortihm.
+				To add more high frequency shadows we used a screen space ambient occlusion algorithm.
 			</p>
 			<p>
 				I implemented most of the imperfect shadow mapping algorithm while the other project member worked on the screen space ambient occlusion.
-				The code was written in C++ using modern OpenGL to generate points on triangles, create shadow mapps and merge the results together.
+				The code was written in C++ using modern OpenGL to generate points on triangles, create shadow maps and merge the results together.
 			</p>
 		</div>
 		<div class="meta">
 		<div class="meta_container">
 			<table>
-				<tr><th>keywords</th><td>Computer graphics, Modelling, Level-sets, Subdivision, Decimation, AI, Collision response physics, Volume rendering, Shader Ray casting, OpenMP, Post-processing, Fluid simulation</td></tr>
-				<tr><th>when</th><td>2012 - 2013</td></tr>
+				<tr><th>keywords</th><td>Computer graphics, GLSL</td></tr>
+				<tr><th>course</th><td>Advanced Computer Graphics (TNCG14)</td></tr>
+				<tr><th>when</th><td>2013</td></tr>
 				<tr><th>languages</th><td>C++, GLSL</td></tr>
-				<tr><th>frameworks</th><td>OpenGL, OpenMP</td></tr>
+				<tr><th>frameworks</th><td>OpenGL</td></tr>
 			</table>
 		</div>
 		</div>
@@ -101,37 +101,25 @@
 		<div class="school_border"></div>
 		<header><h3>Near optimal A* path finding</h3></header>
 		<div class="media">
-			<a class="fancyboxg5" href="media/figures/raycasterGPU.jpg" title="GPU Based Ray caster written in GLSL.">
-				<img src="media/figures/labs.jpg"/>
+			<a class="fancyboxg5" href="media/figures/nastar1.png" title="Near optimal A* path finding.">
+				<img src="media/figures/nastar1.png"/>
 			</a>
 			<div class="hidden">
-				<a class="fancyboxg5" href="media/figures/cow5804.png" title="Original mesh, containing 5804 triangles."></a>
-				<a class="fancyboxg5" href="media/figures/cow1000S.png" title="Simple decimation mesh, containing 1000 triangles."></a>
-				<a class="fancyboxg5" href="media/figures/cow1000Q.png" title="Quadric decimation mesh, containing 1000 triangles."></a>
-				<a class="fancyboxg5" href="media/figures/cow92864Sub.png" title="Subdivided mesh using Loop subdivision scheme. The mesh contains 92864 triangles."></a>
-				<a class="fancyboxg5" href="media/figures/motionblur1.png" title="Post-process motionblur shader."></a>
-				<a class="fancyboxg5" href="media/figures/motionblur2.png" title="Post-process motionblur shader."></a>
-				<a class="fancyboxg5" href="media/figures/omp_raycaster.png" title="Volume renderer, using raycasting. The computation is done on the CPU using OpenMP."></a>
-				<a class="fancyboxg5" href="media/figures/tetris.png" title="Tetris game made in C++"></a>
-				<a class="fancyboxg5" href="media/figures/fluid.png" title="Eulerian based fluid simulation."></a>
-				<a class="fancyboxg5" href="media/figures/greek1.png" title="Level-Set"></a>
-				<a class="fancyboxg5" href="media/figures/greek2.png" title="Smoothed level-set"></a>
-				<a class="fancyboxg5" href="media/figures/implicit.png" title="Result of an union using super-elliptic blending of two implicit spheres."></a>
-			</div>
-			
+				<a class="fancyboxg5" href="media/figures/nastar2.png" title="Underlying grid that is used to optimize path finding."></a>
+			</div>		
 		</div>
 		<div class="description">
 			<p>
-				Lab assignment snapshots from numerous courses.
+				I implemented a improved A* method by creating a node grid as a estimation of a given map. By finding the path within the graph first and then finding the correct way, using the nodes, it was possible to find solutions close to the optimal path with a reduced search time compared to a regular A* implementation.
 			</p>
 		</div>
 		<div class="meta">
 		<div class="meta_container">
 			<table>
-				<tr><th>keywords</th><td>Computer graphics, Modelling, Level-sets, Subdivision, Decimation, AI, Collision response physics, Volume rendering, Shader Ray casting, OpenMP, Post-processing, Fluid simulation</td></tr>
-				<tr><th>when</th><td>2012 - 2013</td></tr>
-				<tr><th>languages</th><td>C++, GLSL</td></tr>
-				<tr><th>frameworks</th><td>OpenGL, OpenMP</td></tr>
+				<tr><th>keywords</th><td>AI</td></tr>
+				<tr><th>course</th><td>Computer models for cognitive processes (TNM066)</td></tr>
+				<tr><th>when</th><td>2013</td></tr>
+				<tr><th>languages</th><td>Python</td></tr>
 			</table>
 		</div>
 		</div>
@@ -142,26 +130,32 @@
 		<div class="school_border"></div>
 		<header><h3>Wrangle tangle</h3></header>
 		<div class="media">
-			<a class="fancybox fancybox.iframe" href="//player.vimeo.com/video/24724543?&autoplay=true">
+			<a class="fancybox fancybox.iframe" href="//player.vimeo.com/video/90101762?&autoplay=true">
 				<img src="media/figures/wrangle.png"/>
 			</a>
 		</div>
 		<div class="description">
 			<p>
-			Network based first person shooter, made in XNA. This was my the first 
-			big software project in school (2nd year), which I made with 3 other students.
-			Together with another student I were responsible of coding the core functionality of the game, 
-			while the other two where responsible for modeling, animation, texture-mapping etc.
+				Mobile puzzle game created together with a friend at the university.
+				The goal is to stretch snakes between a start point and a goal while using as much of the length of the snake as possible.
+			</p>
+			<p>
+				I wrote all of the back end interaction code that handles collisions between the obstacle spheres and the snake.
+				It is based on trigonometry where collision points and tangents to the finger are calculated.
+				The body of the snake is then generated using the results of the calculation.
+			</p>
+			<p>
+				We won a local game competition called Liu Game Awards with the game, competing against around 30 other games created during the same year.
 			</p>
 		</div>
 		<div class="meta">
 		<div class="meta_container">
 			<table>
-				<tr><th>keywords</th><td>First person shooter</td></tr>
+				<tr><th>keywords</th><td>Android Game</td></tr>
 				<tr><th>course</th><td>3-D Computer Graphics (TNM061)</td></tr>
-				<tr><th>when</th><td>2011 (2nd year)</td></tr>
-				<tr><th>languages</th><td>C#</td></tr>
-				<tr><th>frameworks</th><td>.NET, XNA</td></tr>
+				<tr><th>when</th><td>2013 (4th year)</td></tr>
+				<tr><th>languages</th><td>Java</td></tr>
+				<tr><th>frameworks</th><td>Android, LibGDX</td></tr>
 			</table>
 		</div>
 		</div>
@@ -177,17 +171,6 @@
 			</a>
 			<div class="hidden">
 				<a class="fancyboxg5" href="media/figures/cow5804.png" title="Original mesh, containing 5804 triangles."></a>
-				<a class="fancyboxg5" href="media/figures/cow1000S.png" title="Simple decimation mesh, containing 1000 triangles."></a>
-				<a class="fancyboxg5" href="media/figures/cow1000Q.png" title="Quadric decimation mesh, containing 1000 triangles."></a>
-				<a class="fancyboxg5" href="media/figures/cow92864Sub.png" title="Subdivided mesh using Loop subdivision scheme. The mesh contains 92864 triangles."></a>
-				<a class="fancyboxg5" href="media/figures/motionblur1.png" title="Post-process motionblur shader."></a>
-				<a class="fancyboxg5" href="media/figures/motionblur2.png" title="Post-process motionblur shader."></a>
-				<a class="fancyboxg5" href="media/figures/omp_raycaster.png" title="Volume renderer, using raycasting. The computation is done on the CPU using OpenMP."></a>
-				<a class="fancyboxg5" href="media/figures/tetris.png" title="Tetris game made in C++"></a>
-				<a class="fancyboxg5" href="media/figures/fluid.png" title="Eulerian based fluid simulation."></a>
-				<a class="fancyboxg5" href="media/figures/greek1.png" title="Level-Set"></a>
-				<a class="fancyboxg5" href="media/figures/greek2.png" title="Smoothed level-set"></a>
-				<a class="fancyboxg5" href="media/figures/implicit.png" title="Result of an union using super-elliptic blending of two implicit spheres."></a>
 			</div>
 			
 		</div>
@@ -213,26 +196,32 @@
 		<div class="school_border"></div>
 		<header><h3>The psychosis of Granny Smith</h3></header>
 		<div class="media">
-			<a class="fancybox fancybox.iframe" href="//player.vimeo.com/video/24724543?&autoplay=true">
-				<img src="media/figures/mtdeathmatch.png"/>
+		 <a class="fancyboxg5" href="media/figures/granny.png" title="Game Jam game">
+				<img src="media/figures/granny.png"/>
 			</a>
+			<div class="hidden">
+				<a class="fancyboxg5" href="media/figures/granny2.png" title="Underlying grid that is used to optimize path finding."></a>
+			</div>	
 		</div>
 		<div class="description">
 			<p>
-			Network based first person shooter, made in XNA. This was my the first 
-			big software project in school (2nd year), which I made with 3 other students.
-			Together with another student I were responsible of coding the core functionality of the game, 
-			while the other two where responsible for modeling, animation, texture-mapping etc.
+				A game where a old granny escaped a mental asylum are out for revenge on the modern society.
+				It is a stealth-game where you have to sneak around the guards, destroy devices before overpowering them all.
+				We wanted to implement a possibility to loose when guards called the cops or overpowered the granny.
+			</p>
+			<p>
+				Game created during 24 hour game jam using Pygame.
+				I worked together with a friend and we created all the graphics, implemented A* path finding for the AI and did a lot of other things to finish the game.
 			</p>
 		</div>
 		<div class="meta">
 		<div class="meta_container">
 			<table>
-				<tr><th>keywords</th><td>First person shooter</td></tr>
-				<tr><th>course</th><td>3-D Computer Graphics (TNM061)</td></tr>
-				<tr><th>when</th><td>2011 (2nd year)</td></tr>
-				<tr><th>languages</th><td>C#</td></tr>
-				<tr><th>frameworks</th><td>.NET, XNA</td></tr>
+				<tr><th>keywords</th><td>Game jam game</td></tr>
+				<tr><th>event</th><td>Dreamhackaton Sthlm 2014</td></tr>
+				<tr><th>when</th><td>2014</td></tr>
+				<tr><th>languages</th><td>Python</td></tr>
+				<tr><th>frameworks</th><td>Pygame</td></tr>
 			</table>
 		</div>
 		</div>
@@ -244,7 +233,7 @@
 		<header><h3>MT Death Match</h3></header>
 		<div class="media">
 			<a class="fancybox fancybox.iframe" href="//player.vimeo.com/video/24724543?&autoplay=true">
-				<img src="media/figures/mtdeathmatch.png"/>
+				<img src="media/figures/mtd.png"/>
 			</a>
 		</div>
 		<div class="description">
@@ -314,32 +303,28 @@
 		<div class="school_border"></div>
 		<header><h3>Monte Carlo ray-tracer</h3></header>
 		<div class="media">
-			<a class="fancyboxg6" href="media/figures/mc_diffuse2.png">
-				<img src="media/figures/raytracer.png"/>
+			<a class="fancyboxg6" href="media/figures/schumacher.png">
+				<img src="media/figures/schumacher.png"/>
 			</a>
 			<div class="hidden">
-				<a class="fancyboxg6" href="media/figures/mc_caustics3.png"></a>
-				<a class="fancyboxg6" href="media/figures/mc_caustics2.png"></a>
-				<a class="fancyboxg6" href="media/figures/mc_diffuse1.png"></a>
-				<a class="fancyboxg6" href="media/figures/mc_caustics1.png"></a>
-				<a class="fancyboxg6" href="media/figures/mc_caustics4.png" title="Pure Monte Carlo ray-tracing, 7000 sampels/pixel"></a>
-				<a class="fancyboxg6" href="media/figures/mc_photonmap.png" title="Direct visualization of the global photon map."></a>
+				
 			</div>
 		</div>
 		<div class="description">
 			<p>
-			A Monte Carlo ray-tracer I developed together with another student. 
-			We also implemented Photon mapping, but since we had not time to optimize it, 
-			we used the pure Monte Carlo ray-tracer mostly. We also used spectral rendering, where the eye response of the radiance is simulated.
+				In this project I created a offline renderer using Monte Carlo integration to estimate the rendering equation together with a friend.
+				During the project I worked on multi threading the application, implementing a octree structure to increase the performance and worked on the ray tracing algorithm.
+				I also made sure that the program worked both in Linux and Windows.
 			</p>
 			<p>
-			One limitation with the implementation is the material model, which can only handle perfect specular reflections and refractions.
+				The program was written in C++ using C++11 threads for multithreading and OpenGL to show the rendering process.				
 			</p>
+
 		</div>
 		<div class="meta">
 		<div class="meta_container">
 			<table>
-				<tr><th>keywords</th><td>Ray tracing, Global illumination, Monte Carlo, Photon maps</td></tr>
+				<tr><th>keywords</th><td>Ray tracing, Global illumination, Monte Carlo, Multicore</td></tr>
 				<tr><th>course</th><td>Advanced Global Illumination and Rendering (TNCG15)</td></tr>
 				<tr><th>when</th><td>2013 (5th year)</td></tr>
 				<tr><th>languages</th><td>C++</td></tr>
@@ -358,7 +343,7 @@
 		<header><h3>Depth Of Field by Simulated Heat Diffusion</h3></header>
 		<div class="media">
 			<a class="fancybox fancybox.iframe" href="//www.youtube.com/embed/2NwUQt8yGog?autoplay=1&wmode=opaque">
-				<img src="media/figures/ddof.png"/>
+				<img src="media/figures/dof.png"/>
 			</a>
 		</div>
 		<div class="description">
@@ -368,15 +353,9 @@
 				Pixar report <a href="http://graphics.pixar.com/library/DepthOfField/paper.pdf">Interactive Depth of Field Using Simulated Diffusion on a GPU.</a>
 			</p>
 			<p>	
-				There is a few different methods to post-process depth of field, most of them suffers from color
-				bleeding, e.g. when the color from a out-of-focus object which lie behind a in-focus object, can be seen on
-				the focused object. This method solves this problem by solving the Diffusion
-				equitation using a ADI method. This results in a tri-diagonal linear system
-				which can efficiently be solved on the GPU using various methods, we used the Jacobi method.
-				The whole process was computed using the GLSL fragment shader.
-			</p>
-			<p>
-				Even though the method solves the color bleeding problem, it also add other artefacts.
+				This is a special technique that reduces color bleeding from out-of-focus object over in-focus objects.
+				The problem is solved by calculating a solution to the diffusion equation.
+				This results in a tri-diagonal linear system that we solve on the GPU using the Jacobi method using GLSL shaders.
 			</p>
 		</div>
 		<div class="meta">
@@ -396,7 +375,7 @@
 		
 		<div class="clear"></div>
 	</article>
-
+<!--
 	<article id="procedural_world">
 		<div class="school_border"></div>
 		<header><h3>Procedural world generation on GPU</span></h3></header>
@@ -432,13 +411,13 @@
 		</div>
 		<div class="clear"></div>
 	</article>
-
+-->
 	<article id="cloth">
 		<div class="school_border"></div>
 		<header><h3>Interactive real time Cloth Simulation</h3></header>
 		<div class="media">
 			<a class="fancybox fancybox.iframe" href="//www.youtube.com/embed/0BcCe6zL_PE?autoplay=1&wmode=opaque">
-				<img src="media/figures/cloth.png"/>
+				<img src="media/figures/compilation.png"/>
 			</a>
 		</div>
 		<div class="description">
@@ -480,24 +459,13 @@
 	
 		<article id="subdiv">
 		<div class="school_border"></div>
-		<header><h3>Lab snapshots</h3></header>
+		<header><h3>Mesh subdivision</h3></header>
 		<div class="media">
-			<a class="fancyboxg5" href="media/figures/raycasterGPU.jpg" title="GPU Based Ray caster written in GLSL.">
-				<img src="media/figures/labs.jpg"/>
+			<a class="fancyboxg5" href="media/figures/decimatedcow.png" title="CPU-based mesh subdivision">
+				<img src="media/figures/decimatedcow.png"/>
 			</a>
 			<div class="hidden">
-				<a class="fancyboxg5" href="media/figures/cow5804.png" title="Original mesh, containing 5804 triangles."></a>
-				<a class="fancyboxg5" href="media/figures/cow1000S.png" title="Simple decimation mesh, containing 1000 triangles."></a>
-				<a class="fancyboxg5" href="media/figures/cow1000Q.png" title="Quadric decimation mesh, containing 1000 triangles."></a>
-				<a class="fancyboxg5" href="media/figures/cow92864Sub.png" title="Subdivided mesh using Loop subdivision scheme. The mesh contains 92864 triangles."></a>
-				<a class="fancyboxg5" href="media/figures/motionblur1.png" title="Post-process motionblur shader."></a>
-				<a class="fancyboxg5" href="media/figures/motionblur2.png" title="Post-process motionblur shader."></a>
-				<a class="fancyboxg5" href="media/figures/omp_raycaster.png" title="Volume renderer, using raycasting. The computation is done on the CPU using OpenMP."></a>
-				<a class="fancyboxg5" href="media/figures/tetris.png" title="Tetris game made in C++"></a>
-				<a class="fancyboxg5" href="media/figures/fluid.png" title="Eulerian based fluid simulation."></a>
-				<a class="fancyboxg5" href="media/figures/greek1.png" title="Level-Set"></a>
-				<a class="fancyboxg5" href="media/figures/greek2.png" title="Smoothed level-set"></a>
-				<a class="fancyboxg5" href="media/figures/implicit.png" title="Result of an union using super-elliptic blending of two implicit spheres."></a>
+				<a class="fancyboxg5" href="media/figures/cube.png" title="Cube mesh subdivided using the subdivision scheme."></a>
 			</div>
 			
 		</div>
@@ -521,24 +489,13 @@
 
 	<article id="levelset">
 		<div class="school_border"></div>
-		<header><h3>Lab snapshots</h3></header>
+		<header><h3>Level set operations</h3></header>
 		<div class="media">
-			<a class="fancyboxg5" href="media/figures/raycasterGPU.jpg" title="GPU Based Ray caster written in GLSL.">
-				<img src="media/figures/labs.jpg"/>
+			<a class="fancyboxg5" href="media/figures/smoothunion3.png" title="GPU Based Ray caster written in GLSL.">
+				<img src="media/figures/smoothunion3.png"/>
 			</a>
 			<div class="hidden">
 				<a class="fancyboxg5" href="media/figures/cow5804.png" title="Original mesh, containing 5804 triangles."></a>
-				<a class="fancyboxg5" href="media/figures/cow1000S.png" title="Simple decimation mesh, containing 1000 triangles."></a>
-				<a class="fancyboxg5" href="media/figures/cow1000Q.png" title="Quadric decimation mesh, containing 1000 triangles."></a>
-				<a class="fancyboxg5" href="media/figures/cow92864Sub.png" title="Subdivided mesh using Loop subdivision scheme. The mesh contains 92864 triangles."></a>
-				<a class="fancyboxg5" href="media/figures/motionblur1.png" title="Post-process motionblur shader."></a>
-				<a class="fancyboxg5" href="media/figures/motionblur2.png" title="Post-process motionblur shader."></a>
-				<a class="fancyboxg5" href="media/figures/omp_raycaster.png" title="Volume renderer, using raycasting. The computation is done on the CPU using OpenMP."></a>
-				<a class="fancyboxg5" href="media/figures/tetris.png" title="Tetris game made in C++"></a>
-				<a class="fancyboxg5" href="media/figures/fluid.png" title="Eulerian based fluid simulation."></a>
-				<a class="fancyboxg5" href="media/figures/greek1.png" title="Level-Set"></a>
-				<a class="fancyboxg5" href="media/figures/greek2.png" title="Smoothed level-set"></a>
-				<a class="fancyboxg5" href="media/figures/implicit.png" title="Result of an union using super-elliptic blending of two implicit spheres."></a>
 			</div>
 			
 		</div>

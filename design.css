@@ -294,11 +294,11 @@ img
 	font-weight: bold;
 }
 
-#simulation .meta table tr:nth-of-type(even) 
+#gamedev .meta table tr:nth-of-type(even) 
 {
 	background-color:#fcdddd;
 }
-#simulation .media a img:hover
+#gamedev .media a img:hover
 {
 	border: 0.4em solid #fcdddd;
 	border-radius: 0.15em;
