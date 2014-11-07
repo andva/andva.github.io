@@ -1,0 +1,378 @@
+*
+{
+	padding: 0;
+	margin: 0;
+}
+
+body
+{
+	background-color: #fff;
+	font-size: 10pt;
+	overflow:scroll;
+}
+
+header, section, footer, aside, nav, article, figure
+{ 
+	display: block; 
+}
+
+h1 {font-size:3em;}
+h2 {font-size:2em;}
+h3 {font-size:1.5em;}
+h4 {font-size:1em;}
+p,li,td,a{font-size:1em;}
+
+h1, h2, h3, h4, h5, p, li,td,th, a
+{
+	font-family: Helvetica, Tahoma, Arial, sans-serif;
+	color: #222;
+}
+
+h1, h2, h3 
+{
+	font-weight: normal;
+}
+
+a
+{
+	text-decoration: none;
+}
+
+a:hover
+{
+	text-decoration: underline;
+}
+
+ul
+{
+	list-style-type: square;
+}
+
+.hidden {
+    display: none;
+}
+
+img 
+{
+	border: none;
+}
+
+#main_header
+{
+	background-color: #333;
+	min-width: 90em;
+	width: 100%;
+	height: auto;
+}
+
+#header_element header
+{
+	position:relative;
+	left: 7em;
+	top: 0.5em;
+}
+
+#header_element header h1
+{
+	font-weight: normal;
+}
+
+#header_element
+{
+	padding: 2em 0;
+	margin: 0 auto;
+	width: 60em;
+	height: 5em;
+}
+
+#contact_info
+{
+	padding: 0 3em;
+	float: right;
+}
+
+#contact_info ul
+{
+	list-style: none;
+}
+
+#contact_info a, #contact_info h4, #contact_info li
+{
+	color: #CCC;
+}
+
+#contact_info li
+{
+	font-size: 80%;
+	margin: 0.2em 0;
+}
+
+#contact_info li:first-child
+{
+	margin-top: 0;
+}
+
+#header_element header
+{
+	padding: 0 3em;
+	float: left;
+}
+
+#header_element header h1
+{
+	color: white;
+}
+
+#header_element header h3
+{
+	font-weight: normal;
+	font-style: italic;
+	color: #CCC;
+}
+
+#photo 
+{
+	position:relative;
+	left: -7em;
+	top: -5em;
+	width: 12em;
+	height: auto;
+}
+
+#photo img
+{
+	width: 100%;
+	height: auto;
+	border: 0.3em solid white;
+	border-radius: 0.15em;
+}
+
+#menu 
+{
+	position:relative;
+	left: -12.7em;
+	top: 7.75em;
+}
+
+#menu  li
+{
+	display: inline;
+}
+
+#menu  a
+{
+	padding: 0.25em 0.5em;
+	background-color: #DDD;
+	border: 0.25em solid #DDD;
+	border-radius: 0.15em;
+}
+
+#menu  a:hover
+{
+	background-color: #AAA;
+	border: 0.25em solid #AAA;
+	text-decoration: none;
+}
+
+#main_container 
+{
+	padding: 0;
+	margin: 7em auto;
+	height: 100%;
+	width: 90em;
+}
+
+#main_container h2, #main_container h3
+{
+	font-weight: normal;
+}
+
+#main_container  a img:hover
+{
+	background-color: #8DC1D6;
+}
+
+#main_container article
+{
+	margin: 1em 0;
+}
+
+#main_container article header
+{
+	color: #222;
+}
+
+.topic
+{
+	width: 28em;
+	height: auto;
+	float: left;
+	margin: 0 1em;
+}
+
+#gamedev
+{
+}
+#gamedev h2
+{
+	border-bottom: 0.1em solid #f27979;
+}
+
+#graphics
+{	
+}
+#graphics h2
+{
+	border-bottom: 0.1em solid #a2f279; 
+}
+
+
+#other
+{
+}
+#other h2
+{
+	border-bottom: 0.1em solid #7997f2;
+}
+.description
+{
+	padding: 0;
+	margin: 0;
+	float: left;
+}
+
+.description p
+{
+	margin: 0.5em 0;
+}
+
+.description a
+{
+	font-weight: bold;
+	color: #333;
+}
+
+.meta
+{
+	padding: 0;
+	margin: 0;
+	width: 28em;
+	float: left;
+}
+
+.meta_container
+{
+	overflow: hidden;
+	text-overflow:ellipsis;
+	word-wrap:break-word;
+}
+
+.meta table
+{
+	border-collapse: collapse;
+	margin: 0;
+}
+
+.meta td, .meta th
+{
+	padding: 0.3em 0.5em;
+}
+
+.meta th
+{
+	text-align: left;
+}
+
+.meta td
+{
+	width: 100%;
+}
+
+.meta a
+{
+	color: #333;
+	font-weight: bold;
+}
+
+#simulation .meta table tr:nth-of-type(even) 
+{
+	background-color:#fcdddd;
+}
+#simulation .media a img:hover
+{
+	border: 0.4em solid #fcdddd;
+	border-radius: 0.15em;
+}
+
+#graphics .meta table tr:nth-of-type(even) 
+{
+	background-color:#ddfcdd;
+}
+#graphics .media a img:hover
+{
+	border: 0.4em solid #ddfcdd;
+	border-radius: 0.15em;
+}
+
+#other .meta table tr:nth-of-type(even) 
+{
+	background-color:#ddddfc;
+}
+#other .media a img:hover
+{
+	border: 0.4em solid #ddddfc;
+	border-radius: 0.15em;
+}
+
+.media
+{
+	padding: 0;
+	margin: 0;
+	margin-top: 0.5em;
+	width: 27.2em;
+	float: left;
+}
+
+.media img
+{
+	width: 100%;
+	height: auto;
+	border: 0.4em solid #DDD;
+	border-radius: 0.15em;
+}
+
+.media a img:hover
+{
+	border: 0.4em solid #AAA;
+	border-radius: 0.15em;
+}
+
+.clear
+{
+	clear: both;
+}
+
+.readmore-js-toggle, .readmore-js-section 
+{
+	display: block;
+	width: 100%;
+}
+.readmore-js-section 
+{
+	overflow: hidden;
+}
+
+.readmore-js-toggle 
+{
+	font-weight: bold;
+	color: #666;
+	text-align: center;
+}
+
+.readmore-js-toggle:hover
+{
+	color: #666;
+}
+
+
+

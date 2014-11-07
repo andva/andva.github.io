@@ -1,5 +1,691 @@
+<!DOCTYPE html>
 <html>
+
+<head>
+	<meta name="google-site-verification" content="x72mHe8XNVjm4YtSfuu7ABof-h45vIH2hDrZzBxI8gY" />
+	<meta charset="UTF-8">
+	<meta name="author" content="Andreas Valter">
+	<meta name="keywords" content="Andreas Valter, Portfolio, Media Technology and Engineering, Civilingenjör, Medieteknik, Computer Science, Computer Graphics, Visualization, Simulation, Software development, LiTH, Campus Norrköping">
+	<title>Andreas Valter</title>
+
+	<link rel="stylesheet" type="text/css" href="design.css">
+	<link rel="stylesheet" type="text/css" href="cvdesign.css">
+	<link rel="stylesheet" href="javascript/fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+</head>
+
 <body>
-<3
+
+
+<div id="main_header">
+	<div id="header_element">
+
+		<header>
+			<h1>Andreas Valter</h1>
+			<h3>Portfolio</h3>
+		</header>
+			
+		<div id="contact_info">
+			<h4>contact info</h4>
+			<ul>
+			<li><a href="mailto:andreasvalter@gmail.com">AndreasValter@gmail.com</a></li>
+			<li>+46 70 527 19 05</li>
+			<li>
+				<a href="http://se.linkedin.com/pub/Andreas-Valter/4b/5a/645" style="color:#0783B6;">
+					<img src="http://www.linkedin.com/img/webpromo/btn_in_20x15.png" width="20" height="15" alt="View Andreas Valter's LinkedIn profile" style="vertical-align:middle">
+					LinkedIn profile
+				</a>
+			</li>
+			</ul>
+		</div>
+		
+		<div id="menu">
+			<ul>
+				<li id="about"><a href="about.html">About</a></li>
+				<li id="portfolio"><a href="#">Portfolio</a></li>
+				<li id="cv"><a href="cv.html">CV</a></li>
+				<li id="education"><a href="education.html">Education</a></li>
+			</ul>
+		</div>	
+		
+		<div id="photo">
+			<img src="media/figures/jag2.png"/>
+		</div>	
+		
+		<div class="clear"></div>
+
+	</div>
+</div>
+
+<div id="main_container">
+<div class="topic" id="gamedev">
+	<h2>Game dev</h2>
+	
+	<article id="imperfect">
+		<div class="school_border"></div>
+		<header><h3>Imperfect shadow mapping</h3></header>
+		<div class="media">
+			<a class="fancyboxg5" href="media/figures/bunny_ssao.png" title="GPU Based Ray caster written in GLSL.">
+				<img src="media/figures/labs.jpg"/>
+			</a>
+			<div class="hidden">
+				<a class="fancyboxg5" href="media/figures/bunny_ssao.png" title="Original mesh, containing 5804 triangles."></a>
+			</div>
+			
+		</div>
+		<div class="description">
+			<p>
+				The project implemented a report describing a technique for simulating low frequency soft shadows in a scene by using shadow maps and a point representation of the scene.
+				The implementation was based on the paper <a href="http://resources.mpi-inf.mpg.de/ImperfectShadowMaps/ISM.pdf" title="Imperfect Shadow Mapping"> by Ritschel et. al.
+				This allowed for increasing the light source count in the scene and make the lightning converge towards a real representation of area lights while still running in real time.
+				To add more high frequency shadows we used a screen space ambient occlusion algortihm.
+			</p>
+			<p>
+				I implemented most of the imperfect shadow mapping algorithm while the other project member worked on the screen space ambient occlusion.
+				The code was written in C++ using modern OpenGL to generate points on triangles, create shadow mapps and merge the results together.
+			</p>
+		</div>
+		<div class="meta">
+		<div class="meta_container">
+			<table>
+				<tr><th>keywords</th><td>Computer graphics, Modelling, Level-sets, Subdivision, Decimation, AI, Collision response physics, Volume rendering, Shader Ray casting, OpenMP, Post-processing, Fluid simulation</td></tr>
+				<tr><th>when</th><td>2012 - 2013</td></tr>
+				<tr><th>languages</th><td>C++, GLSL</td></tr>
+				<tr><th>frameworks</th><td>OpenGL, OpenMP</td></tr>
+			</table>
+		</div>
+		</div>
+		<div class="clear"></div>
+	</article>
+
+	<article id="pather">
+		<div class="school_border"></div>
+		<header><h3>Near optimal A* path finding</h3></header>
+		<div class="media">
+			<a class="fancyboxg5" href="media/figures/raycasterGPU.jpg" title="GPU Based Ray caster written in GLSL.">
+				<img src="media/figures/labs.jpg"/>
+			</a>
+			<div class="hidden">
+				<a class="fancyboxg5" href="media/figures/cow5804.png" title="Original mesh, containing 5804 triangles."></a>
+				<a class="fancyboxg5" href="media/figures/cow1000S.png" title="Simple decimation mesh, containing 1000 triangles."></a>
+				<a class="fancyboxg5" href="media/figures/cow1000Q.png" title="Quadric decimation mesh, containing 1000 triangles."></a>
+				<a class="fancyboxg5" href="media/figures/cow92864Sub.png" title="Subdivided mesh using Loop subdivision scheme. The mesh contains 92864 triangles."></a>
+				<a class="fancyboxg5" href="media/figures/motionblur1.png" title="Post-process motionblur shader."></a>
+				<a class="fancyboxg5" href="media/figures/motionblur2.png" title="Post-process motionblur shader."></a>
+				<a class="fancyboxg5" href="media/figures/omp_raycaster.png" title="Volume renderer, using raycasting. The computation is done on the CPU using OpenMP."></a>
+				<a class="fancyboxg5" href="media/figures/tetris.png" title="Tetris game made in C++"></a>
+				<a class="fancyboxg5" href="media/figures/fluid.png" title="Eulerian based fluid simulation."></a>
+				<a class="fancyboxg5" href="media/figures/greek1.png" title="Level-Set"></a>
+				<a class="fancyboxg5" href="media/figures/greek2.png" title="Smoothed level-set"></a>
+				<a class="fancyboxg5" href="media/figures/implicit.png" title="Result of an union using super-elliptic blending of two implicit spheres."></a>
+			</div>
+			
+		</div>
+		<div class="description">
+			<p>
+				Lab assignment snapshots from numerous courses.
+			</p>
+		</div>
+		<div class="meta">
+		<div class="meta_container">
+			<table>
+				<tr><th>keywords</th><td>Computer graphics, Modelling, Level-sets, Subdivision, Decimation, AI, Collision response physics, Volume rendering, Shader Ray casting, OpenMP, Post-processing, Fluid simulation</td></tr>
+				<tr><th>when</th><td>2012 - 2013</td></tr>
+				<tr><th>languages</th><td>C++, GLSL</td></tr>
+				<tr><th>frameworks</th><td>OpenGL, OpenMP</td></tr>
+			</table>
+		</div>
+		</div>
+		<div class="clear"></div>
+	</article>
+
+	<article id="wrangle">
+		<div class="school_border"></div>
+		<header><h3>Wrangle tangle</h3></header>
+		<div class="media">
+			<a class="fancybox fancybox.iframe" href="//player.vimeo.com/video/24724543?&autoplay=true">
+				<img src="media/figures/wrangle.png"/>
+			</a>
+		</div>
+		<div class="description">
+			<p>
+			Network based first person shooter, made in XNA. This was my the first 
+			big software project in school (2nd year), which I made with 3 other students.
+			Together with another student I were responsible of coding the core functionality of the game, 
+			while the other two where responsible for modeling, animation, texture-mapping etc.
+			</p>
+		</div>
+		<div class="meta">
+		<div class="meta_container">
+			<table>
+				<tr><th>keywords</th><td>First person shooter</td></tr>
+				<tr><th>course</th><td>3-D Computer Graphics (TNM061)</td></tr>
+				<tr><th>when</th><td>2011 (2nd year)</td></tr>
+				<tr><th>languages</th><td>C#</td></tr>
+				<tr><th>frameworks</th><td>.NET, XNA</td></tr>
+			</table>
+		</div>
+		</div>
+		<div class="clear"></div>
+	</article>
+
+	<article id="bloom">
+		<div class="school_border"></div>
+		<header><h3>Bloom</h3></header>
+		<div class="media">
+			<a class="fancyboxg5" href="media/figures/raycasterGPU.jpg" title="GPU Based Ray caster written in GLSL.">
+				<img src="media/figures/labs.jpg"/>
+			</a>
+			<div class="hidden">
+				<a class="fancyboxg5" href="media/figures/cow5804.png" title="Original mesh, containing 5804 triangles."></a>
+				<a class="fancyboxg5" href="media/figures/cow1000S.png" title="Simple decimation mesh, containing 1000 triangles."></a>
+				<a class="fancyboxg5" href="media/figures/cow1000Q.png" title="Quadric decimation mesh, containing 1000 triangles."></a>
+				<a class="fancyboxg5" href="media/figures/cow92864Sub.png" title="Subdivided mesh using Loop subdivision scheme. The mesh contains 92864 triangles."></a>
+				<a class="fancyboxg5" href="media/figures/motionblur1.png" title="Post-process motionblur shader."></a>
+				<a class="fancyboxg5" href="media/figures/motionblur2.png" title="Post-process motionblur shader."></a>
+				<a class="fancyboxg5" href="media/figures/omp_raycaster.png" title="Volume renderer, using raycasting. The computation is done on the CPU using OpenMP."></a>
+				<a class="fancyboxg5" href="media/figures/tetris.png" title="Tetris game made in C++"></a>
+				<a class="fancyboxg5" href="media/figures/fluid.png" title="Eulerian based fluid simulation."></a>
+				<a class="fancyboxg5" href="media/figures/greek1.png" title="Level-Set"></a>
+				<a class="fancyboxg5" href="media/figures/greek2.png" title="Smoothed level-set"></a>
+				<a class="fancyboxg5" href="media/figures/implicit.png" title="Result of an union using super-elliptic blending of two implicit spheres."></a>
+			</div>
+			
+		</div>
+		<div class="description">
+			<p>
+				Lab assignment snapshots from numerous courses.
+			</p>
+		</div>
+		<div class="meta">
+		<div class="meta_container">
+			<table>
+				<tr><th>keywords</th><td>Computer graphics, Modelling, Level-sets, Subdivision, Decimation, AI, Collision response physics, Volume rendering, Shader Ray casting, OpenMP, Post-processing, Fluid simulation</td></tr>
+				<tr><th>when</th><td>2012 - 2013</td></tr>
+				<tr><th>languages</th><td>C++, GLSL</td></tr>
+				<tr><th>frameworks</th><td>OpenGL, OpenMP</td></tr>
+			</table>
+		</div>
+		</div>
+		<div class="clear"></div>
+	</article>
+
+	<article id="granny">
+		<div class="school_border"></div>
+		<header><h3>The psychosis of Granny Smith</h3></header>
+		<div class="media">
+			<a class="fancybox fancybox.iframe" href="//player.vimeo.com/video/24724543?&autoplay=true">
+				<img src="media/figures/mtdeathmatch.png"/>
+			</a>
+		</div>
+		<div class="description">
+			<p>
+			Network based first person shooter, made in XNA. This was my the first 
+			big software project in school (2nd year), which I made with 3 other students.
+			Together with another student I were responsible of coding the core functionality of the game, 
+			while the other two where responsible for modeling, animation, texture-mapping etc.
+			</p>
+		</div>
+		<div class="meta">
+		<div class="meta_container">
+			<table>
+				<tr><th>keywords</th><td>First person shooter</td></tr>
+				<tr><th>course</th><td>3-D Computer Graphics (TNM061)</td></tr>
+				<tr><th>when</th><td>2011 (2nd year)</td></tr>
+				<tr><th>languages</th><td>C#</td></tr>
+				<tr><th>frameworks</th><td>.NET, XNA</td></tr>
+			</table>
+		</div>
+		</div>
+		<div class="clear"></div>
+	</article>
+
+	<article id="mtdm">
+		<div class="school_border"></div>
+		<header><h3>MT Death Match</h3></header>
+		<div class="media">
+			<a class="fancybox fancybox.iframe" href="//player.vimeo.com/video/24724543?&autoplay=true">
+				<img src="media/figures/mtdeathmatch.png"/>
+			</a>
+		</div>
+		<div class="description">
+			<p>
+			Network based first person shooter, made in XNA. This was my the first 
+			big software project in school (2nd year), which I made with 3 other students.
+			Together with another student I were responsible of coding the core functionality of the game, 
+			while the other two where responsible for modeling, animation, texture-mapping etc.
+			</p>
+		</div>
+		<div class="meta">
+		<div class="meta_container">
+			<table>
+				<tr><th>keywords</th><td>First person shooter</td></tr>
+				<tr><th>course</th><td>3-D Computer Graphics (TNM061)</td></tr>
+				<tr><th>when</th><td>2011 (2nd year)</td></tr>
+				<tr><th>languages</th><td>C#</td></tr>
+				<tr><th>frameworks</th><td>.NET, XNA</td></tr>
+			</table>
+		</div>
+		</div>
+		<div class="clear"></div>
+	</article>
+</div>
+
+<div class="topic" id="graphics">
+	<h2>Physically based</h2>
+	
+	<article id="fire">
+		<header><h3>Physically Based Simulation of Fire</h3></header>
+		<div class="media">
+			<a class="fancybox fancybox.iframe" href="http://www.youtube.com/embed/F40_rowaLQg?autoplay=1&wmode=opaque">
+				<img src="media/figures/fire.png"/>
+			</a>
+		</div>
+		<div class="description">
+		<p>
+		In this projected I created physically based simulation of Fire with 4 other students. 
+		The implementation is largely based on the paper <a href="http://graphics.ucsd.edu/~henrik/papers/fire/fire.pdf">Physically Based Modeling and Animation of Fire</a> by Nguyen et al. 
+		</p>
+		<p>
+		We simulate Fire by using two sets of incompressible flow equations representing the unignited fuel (blue flame)
+		and the hot gaseous products (yellow-orange flame). These equations are coupled together using a ghost fluid
+		method, the interface separating the fluids are tracked using level set methods. 
+		We also track the temperature across the simulation to simulate
+		external forces such as buoyancy, and to be able to render the simulation with
+		a visually accurate result.
+		</p>
+		</div>
+		<div class="meta">
+		<div class="meta_container">
+			<table>
+				<tr><th>keywords</th><td>Navier-Stokes, Fluid Simulation, Two-phase flow</td></tr>
+				<tr><th>course</th><td>Advanced Simulation and Visualization of Fluids in Computer Graphics (TN1008)</td></tr>
+				<tr><th>when</th><td>2013 (4th year)</td></tr>
+				<tr><th>languages</th><td>C++</td></tr>
+				<tr><th>report</th><td>
+					<a href="files/fluid_report.pdf">Fire simulation</a>
+				</td></tr>
+			</table>
+		</div>
+		</div>
+		<div class="clear"></div>
+	</article>
+
+	<article id="raytracer">
+		<div class="school_border"></div>
+		<header><h3>Monte Carlo ray-tracer</h3></header>
+		<div class="media">
+			<a class="fancyboxg6" href="media/figures/mc_diffuse2.png">
+				<img src="media/figures/raytracer.png"/>
+			</a>
+			<div class="hidden">
+				<a class="fancyboxg6" href="media/figures/mc_caustics3.png"></a>
+				<a class="fancyboxg6" href="media/figures/mc_caustics2.png"></a>
+				<a class="fancyboxg6" href="media/figures/mc_diffuse1.png"></a>
+				<a class="fancyboxg6" href="media/figures/mc_caustics1.png"></a>
+				<a class="fancyboxg6" href="media/figures/mc_caustics4.png" title="Pure Monte Carlo ray-tracing, 7000 sampels/pixel"></a>
+				<a class="fancyboxg6" href="media/figures/mc_photonmap.png" title="Direct visualization of the global photon map."></a>
+			</div>
+		</div>
+		<div class="description">
+			<p>
+			A Monte Carlo ray-tracer I developed together with another student. 
+			We also implemented Photon mapping, but since we had not time to optimize it, 
+			we used the pure Monte Carlo ray-tracer mostly. We also used spectral rendering, where the eye response of the radiance is simulated.
+			</p>
+			<p>
+			One limitation with the implementation is the material model, which can only handle perfect specular reflections and refractions.
+			</p>
+		</div>
+		<div class="meta">
+		<div class="meta_container">
+			<table>
+				<tr><th>keywords</th><td>Ray tracing, Global illumination, Monte Carlo, Photon maps</td></tr>
+				<tr><th>course</th><td>Advanced Global Illumination and Rendering (TNCG15)</td></tr>
+				<tr><th>when</th><td>2013 (5th year)</td></tr>
+				<tr><th>languages</th><td>C++</td></tr>
+				<tr><th>frameworks</th><td>GLM, OpenGL, GLFW</td></tr>
+				<tr><th>report</th><td>
+					<a href="files/GlobalIllumination.pdf">Global illumination</a>
+				</td></tr>
+			</table>
+		</div>
+		</div>
+		<div class="clear"></div>
+	</article>
+
+	<article id="ddof">
+		<div class="school_border"></div>
+		<header><h3>Depth Of Field by Simulated Heat Diffusion</h3></header>
+		<div class="media">
+			<a class="fancybox fancybox.iframe" href="//www.youtube.com/embed/2NwUQt8yGog?autoplay=1&wmode=opaque">
+				<img src="media/figures/ddof.png"/>
+			</a>
+		</div>
+		<div class="description">
+			<p>
+				In this project I created together with 2 other students a post-processing effect on the GPU, 
+				which simulates the depth of field using the Diffusion equation. The project is based on the 
+				Pixar report <a href="http://graphics.pixar.com/library/DepthOfField/paper.pdf">Interactive Depth of Field Using Simulated Diffusion on a GPU.</a>
+			</p>
+			<p>	
+				There is a few different methods to post-process depth of field, most of them suffers from color
+				bleeding, e.g. when the color from a out-of-focus object which lie behind a in-focus object, can be seen on
+				the focused object. This method solves this problem by solving the Diffusion
+				equitation using a ADI method. This results in a tri-diagonal linear system
+				which can efficiently be solved on the GPU using various methods, we used the Jacobi method.
+				The whole process was computed using the GLSL fragment shader.
+			</p>
+			<p>
+				Even though the method solves the color bleeding problem, it also add other artefacts.
+			</p>
+		</div>
+		<div class="meta">
+		<div class="meta_container">
+			<table>
+				<tr><th>keywords</th><td>Depth of Field, Post-processing, Linear system, Pixar</td></tr>
+				<tr><th>course</th><td>Advanced Game Programming (TSBK03)</td></tr>
+				<tr><th>when</th><td>2012 (4th year)</td></tr>
+				<tr><th>languages</th><td>C++, GLSL</td></tr>
+				<tr><th>frameworks</th><td>OpenGL, GLFW</td></tr>
+				<tr><th>report</th><td>
+					<a href="files/ddof.pdf">Diffusion Depth Of Field</a>
+				</td></tr>
+			</table>
+		</div>
+		</div>
+		
+		<div class="clear"></div>
+	</article>
+
+	<article id="procedural_world">
+		<div class="school_border"></div>
+		<header><h3>Procedural world generation on GPU</span></h3></header>
+		<div class="media">
+			<a class="fancyboxg8" href="media/figures/tessgen4.png">
+				<img src="media/figures/tessgen.png"/>
+			</a>
+			<div class="hidden">
+				<a class="fancyboxg8" href="media/figures/tessgen1.png"></a>
+				<a class="fancyboxg8" href="media/figures/tessgen2.png" title="Dynamic level of detail."></a>
+				<a class="fancyboxg8" href="media/figures/tessgen3.png" title="Tessellated water surface animation."></a>
+			</div>
+		</div>
+		<div class="description">
+			<p>
+			I currently developing a software to create procedural worlds using tessellation shaders.
+			</p>
+			<p>
+			The goal is to create a big and scalable world, containing procedural terrain and grass.
+			</p>
+		</div>
+		<div class="meta">
+		<div class="meta_container">
+			<table>
+				<tr><th>keywords</th><td>Procedural methods, World Generation, Tessellation, GPU</td></tr>
+				<tr><th>course</th><td>Procedural Methods for Images (TNM084)</td></tr>
+				<tr><th>when</th><td>2014 (5th year)</td></tr>
+				<tr><th>languages</th><td>C++</td></tr>
+				<tr><th>frameworks</th><td>OpenGL, GLFW, GLM</td></tr>
+				<tr><th>report</th><td>In progress</td></tr>
+			</table>
+		</div>
+		</div>
+		<div class="clear"></div>
+	</article>
+
+	<article id="cloth">
+		<div class="school_border"></div>
+		<header><h3>Interactive real time Cloth Simulation</h3></header>
+		<div class="media">
+			<a class="fancybox fancybox.iframe" href="//www.youtube.com/embed/0BcCe6zL_PE?autoplay=1&wmode=opaque">
+				<img src="media/figures/cloth.png"/>
+			</a>
+		</div>
+		<div class="description">
+			<p>
+			This is a mass-spring cloth simulation, where the user can grab the cloth, tear it, 
+			cut it, etc. This project was made in the course TNM085 Modelling and simulation with 4 other students</p>
+			<p>
+			It is quite a simple simulation model, where the cloth is made of lots of particles, 
+			which are aligned in a square-structured grid to each other. The grid is then held together
+			by spring connections between the particles. The simulation uses the leapfrog integration method
+			to calculate a new position over time.
+			</p>
+			
+			<p>
+				I worked mostly with the tearing functionality, the integration scheme and a simple 
+				surface-collision algorithm.
+			</p>
+		</div>
+		<div class="meta">
+		<div class="meta_container">
+			<table>
+				<tr><th>keywords</th><td>Mass-spring system, Hooke's law, Tearing</td></tr>
+				<tr><th>course</th><td>Modelling Project (TNM085)</td></tr>
+				<tr><th>when</th><td>2012 (3rd year)</td></tr>
+				<tr><th>languages</th><td>C++</td></tr>
+				<tr><th>frameworks</th><td>OpenGL, GLFW</td></tr>
+				<tr><th>report</th><td>
+					<a href="files/cloth_simulation.pdf">Cloth simulation (Swedish)</a>
+				</td></tr>
+			</table>
+		</div>
+		</div>
+		<div class="clear"></div>
+	</article>	
+</div>
+
+<div class="topic" id="other">
+	<h2>Other</h2>
+	
+		<article id="subdiv">
+		<div class="school_border"></div>
+		<header><h3>Lab snapshots</h3></header>
+		<div class="media">
+			<a class="fancyboxg5" href="media/figures/raycasterGPU.jpg" title="GPU Based Ray caster written in GLSL.">
+				<img src="media/figures/labs.jpg"/>
+			</a>
+			<div class="hidden">
+				<a class="fancyboxg5" href="media/figures/cow5804.png" title="Original mesh, containing 5804 triangles."></a>
+				<a class="fancyboxg5" href="media/figures/cow1000S.png" title="Simple decimation mesh, containing 1000 triangles."></a>
+				<a class="fancyboxg5" href="media/figures/cow1000Q.png" title="Quadric decimation mesh, containing 1000 triangles."></a>
+				<a class="fancyboxg5" href="media/figures/cow92864Sub.png" title="Subdivided mesh using Loop subdivision scheme. The mesh contains 92864 triangles."></a>
+				<a class="fancyboxg5" href="media/figures/motionblur1.png" title="Post-process motionblur shader."></a>
+				<a class="fancyboxg5" href="media/figures/motionblur2.png" title="Post-process motionblur shader."></a>
+				<a class="fancyboxg5" href="media/figures/omp_raycaster.png" title="Volume renderer, using raycasting. The computation is done on the CPU using OpenMP."></a>
+				<a class="fancyboxg5" href="media/figures/tetris.png" title="Tetris game made in C++"></a>
+				<a class="fancyboxg5" href="media/figures/fluid.png" title="Eulerian based fluid simulation."></a>
+				<a class="fancyboxg5" href="media/figures/greek1.png" title="Level-Set"></a>
+				<a class="fancyboxg5" href="media/figures/greek2.png" title="Smoothed level-set"></a>
+				<a class="fancyboxg5" href="media/figures/implicit.png" title="Result of an union using super-elliptic blending of two implicit spheres."></a>
+			</div>
+			
+		</div>
+		<div class="description">
+			<p>
+				Lab assignment snapshots from numerous courses.
+			</p>
+		</div>
+		<div class="meta">
+		<div class="meta_container">
+			<table>
+				<tr><th>keywords</th><td>Computer graphics, Modelling, Level-sets, Subdivision, Decimation, AI, Collision response physics, Volume rendering, Shader Ray casting, OpenMP, Post-processing, Fluid simulation</td></tr>
+				<tr><th>when</th><td>2012 - 2013</td></tr>
+				<tr><th>languages</th><td>C++, GLSL</td></tr>
+				<tr><th>frameworks</th><td>OpenGL, OpenMP</td></tr>
+			</table>
+		</div>
+		</div>
+		<div class="clear"></div>
+	</article>
+
+	<article id="levelset">
+		<div class="school_border"></div>
+		<header><h3>Lab snapshots</h3></header>
+		<div class="media">
+			<a class="fancyboxg5" href="media/figures/raycasterGPU.jpg" title="GPU Based Ray caster written in GLSL.">
+				<img src="media/figures/labs.jpg"/>
+			</a>
+			<div class="hidden">
+				<a class="fancyboxg5" href="media/figures/cow5804.png" title="Original mesh, containing 5804 triangles."></a>
+				<a class="fancyboxg5" href="media/figures/cow1000S.png" title="Simple decimation mesh, containing 1000 triangles."></a>
+				<a class="fancyboxg5" href="media/figures/cow1000Q.png" title="Quadric decimation mesh, containing 1000 triangles."></a>
+				<a class="fancyboxg5" href="media/figures/cow92864Sub.png" title="Subdivided mesh using Loop subdivision scheme. The mesh contains 92864 triangles."></a>
+				<a class="fancyboxg5" href="media/figures/motionblur1.png" title="Post-process motionblur shader."></a>
+				<a class="fancyboxg5" href="media/figures/motionblur2.png" title="Post-process motionblur shader."></a>
+				<a class="fancyboxg5" href="media/figures/omp_raycaster.png" title="Volume renderer, using raycasting. The computation is done on the CPU using OpenMP."></a>
+				<a class="fancyboxg5" href="media/figures/tetris.png" title="Tetris game made in C++"></a>
+				<a class="fancyboxg5" href="media/figures/fluid.png" title="Eulerian based fluid simulation."></a>
+				<a class="fancyboxg5" href="media/figures/greek1.png" title="Level-Set"></a>
+				<a class="fancyboxg5" href="media/figures/greek2.png" title="Smoothed level-set"></a>
+				<a class="fancyboxg5" href="media/figures/implicit.png" title="Result of an union using super-elliptic blending of two implicit spheres."></a>
+			</div>
+			
+		</div>
+		<div class="description">
+			<p>
+				Lab assignment snapshots from numerous courses.
+			</p>
+		</div>
+		<div class="meta">
+		<div class="meta_container">
+			<table>
+				<tr><th>keywords</th><td>Computer graphics, Modelling, Level-sets, Subdivision, Decimation, AI, Collision response physics, Volume rendering, Shader Ray casting, OpenMP, Post-processing, Fluid simulation</td></tr>
+				<tr><th>when</th><td>2012 - 2013</td></tr>
+				<tr><th>languages</th><td>C++, GLSL</td></tr>
+				<tr><th>frameworks</th><td>OpenGL, OpenMP</td></tr>
+			</table>
+		</div>
+		</div>
+		<div class="clear"></div>
+	</article>
+
+	<article id="pumkin">
+		<div class="school_border"></div>
+		<header><h3>Pumkin - TV remote</h3></header>
+		<div class="media">
+			<a class="fancyboxg3" href="media/figures/pum4.png">
+				<img src="media/figures/pum.png"/>
+			</a>
+			<div class="hidden">
+				<a class="fancyboxg3" href="media/figures/pum2.png"></a>
+				<a class="fancyboxg3" href="media/figures/pum3.png"></a>
+			</div>
+			
+		</div>
+		<div class="description">
+			<p>
+				This was a large scale project, where I worked with approximate 30 other students to build a working
+				software product. The goal was to create a smartphone tv-remote app to Zenterio AB:s Set-top boxes. 
+			</p>
+			<p>
+				I worked as a Developer in this project and I was involved 
+				in much of the Android SDK specific coding. 
+				How to pass data, how to handle the Android life cycle etc.
+			</p>
+		</div>
+		<div class="meta">
+		<div class="meta_container">
+			<table>
+				<tr><th>keywords</th><td>Android</td></tr>
+				<tr><th>course</th><td>Software Engineering (TDDC88)</td></tr>
+				<tr><th>when</th><td>2012 (4th year)</td></tr>
+				<tr><th>languages</th><td>Java, XML</td></tr>
+				<tr><th>frameworks</th><td>Android Framework</td></tr>
+			</table>
+		</div>
+		</div>
+		<div class="clear"></div>
+	</article>
+</div>
+</div>
+
+<script src="javascript/jquery-1.11.0.js"></script>
+<script src="javascript/readmore.js"></script>
+<script type="text/javascript" src="javascript/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+<script type="text/javascript">
+	$(document).ready(function() {
+		$(".fancybox").fancybox({
+			helpers : {
+				title: {
+					type: 'outside'
+				}
+			}
+		});
+	});
+	
+	$(document).ready(function() {
+		$(".fancyboxg1")
+			.attr('rel', 'gallery')
+			.fancybox({
+				padding : 0
+		});
+	});
+	
+	$(document).ready(function() {
+		$(".fancyboxg2")
+			.attr('rel', 'gallery')
+			.fancybox({
+				padding : 0
+		});
+	});
+	
+	$(document).ready(function() {
+		$(".fancyboxg3")
+			.attr('rel', 'gallery')
+			.fancybox({
+				padding : 0
+		});
+	});
+	
+	$(document).ready(function() {
+		$(".fancyboxg4")
+			.attr('rel', 'gallery')
+			.fancybox({
+				padding : 0
+		});
+	});
+	
+	$(document).ready(function() {
+		$(".fancyboxg5")
+			.attr('rel', 'gallery')
+			.fancybox({
+				padding : 0
+		});
+	});
+	
+	$(document).ready(function() {
+		$(".fancyboxg6")
+			.attr('rel', 'gallery')
+			.fancybox({
+				padding : 0
+		});
+	});
+	
+	$(document).ready(function() {
+		$(".fancyboxg7")
+			.attr('rel', 'gallery')
+			.fancybox({
+				padding : 0
+		});
+	});
+	
+	$(document).ready(function() {
+		$(".fancyboxg8")
+			.attr('rel', 'gallery')
+			.fancybox({
+				padding : 0
+		});
+	});
+</script>
+
+<script>
+	$('.description')
+	.readmore({
+			maxHeight: 70
+	});
+</script>
+
 </body>
 </html>
